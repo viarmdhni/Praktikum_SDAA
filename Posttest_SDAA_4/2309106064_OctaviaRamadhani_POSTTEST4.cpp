@@ -66,7 +66,7 @@ Node* createNode() {
     while (!(cin >> newNode->data.harga)) {
         cout << "Input tidak valid. Harap masukkan angka.\n";
         cin.clear();
-        cin.ignore(10000, '\n');
+        cin.ignore('\n');
         cout << "Masukkan harga produk: ";
     }
 
@@ -74,7 +74,7 @@ Node* createNode() {
     while (!(cin >> newNode->data.jumlah_stok)) {
         cout << "Input tidak valid. Harap masukkan angka.\n";
         cin.clear();
-        cin.ignore(10000, '\n');
+        cin.ignore('\n');
         cout << "Masukkan jumlah stok: ";
     }
 
@@ -192,7 +192,7 @@ int main() {
         if (cin.fail()) {
             cout << "Input tidak valid. Harap masukkan angka.\n";
             cin.clear();
-            cin.ignore(10000, '\n');
+            cin.ignore('\n');
             continue;
         }
 
